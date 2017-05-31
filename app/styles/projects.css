@@ -1,0 +1,16 @@
+.table-container {
+  width: 80%;
+  margin: auto;
+}
+
+table {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+td {
+  width: 200px;
+  padding: 5px;
+  overflow: auto;
+  text-align: center;
+}

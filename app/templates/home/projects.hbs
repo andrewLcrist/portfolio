@@ -8,10 +8,19 @@
       <img src={{content.user.avatar_url}} width="50px" alt="user picture">
       <p>{{content.user.name}}</p>
       <p>Link to my <a tartet="_blank" href={{content.user.html_url}}>GitHub</a></p>
+      <div class="table-container">
+        <table class="github-projects-repos">
+          {{#each content.repos as |repo|}}
+            <td>
+              <a target="_blank" href={{repo.html_url}}>
+                {{repo.name}}
+              </a>
+            </td>
+          {{/each}}
+        </table>
+      </div>
     </div>
   </div>
 </div>
-
-{{ log content.repos }}
 
 {{outlet}}
