@@ -1,0 +1,15 @@
+.header-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.header-title {
+  flex-grow: 2;
+  text-align: center;
+}
+
+.header-link {
+  flex-grow: 1;
+  text-align: center;
+}
