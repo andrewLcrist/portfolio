@@ -4,7 +4,14 @@
   </div>
   <div class="github-projects-container">
     <h1>Github Projects</h1>
+    <div class="github-projects-user-info-container">
+      <img src={{content.avatar_url}} width="50px" alt="user picture">
+      <p>{{content.name}}</p>
+      <p>Link to my <a tartet="_blank" href={{content.html_url}}>Github</a></p>
+    </div>
   </div>
 </div>
+
+{{ log content }}
 
 {{outlet}}
