@@ -6,6 +6,10 @@
   <p class="project-content"> <span class="project-header"> about:<br></span>{{content.about}}</p>
   <p class="project-content"><span class="project-header">built using:<br></span>{{content.built}}</p>
   <p class="project-content"><span class="project-header">created by:<br></span>{{content.createdBy}}</p>
+  <p class="project-content">screenshots:</p>
+  {{#each content.images as |image|}}
+    <img src={{image}} alt="app screenshot">
+  {{/each}}
 </div>
 
 {{outlet}}
