@@ -1,0 +1,17 @@
+.project-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 400px;
+  margin: auto;
+  line-height: 1.4em;
+}
+
+.project-content {
+  margin: 10px auto;
+}
+
+.project-header {
+  font-size: 18px;
+}
