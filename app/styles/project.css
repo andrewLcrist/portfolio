@@ -3,9 +3,21 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  width: 400px;
   margin: auto;
   line-height: 1.4em;
+}
+
+.project-screenshot-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  margin: auto;
+  justify-content: center;
+}
+
+.project-text {
+  margin: auto;
+  width: 400px;
 }
 
 .project-content {
@@ -18,4 +30,10 @@
 
 .github-link {
   color: black;
+}
+
+.app-screenshot {
+  border: .5px black solid;
+  height: 500px;
+  margin: 10px auto;
 }
