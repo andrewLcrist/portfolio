@@ -1,6 +1,6 @@
 import Ember from 'ember';
 import RSVP from 'rsvp';
-import env from '../../config/environment'
+import env from '../config/environment'
 
 export default Ember.Route.extend({
   model(){

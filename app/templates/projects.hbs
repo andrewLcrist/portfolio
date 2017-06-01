@@ -1,12 +1,14 @@
+{{nav-bar}}
+
 <div class="projects-container">
   <div class="highlighted-projects-container">
-    <h1>Highlighted Projects</h1>
+    <h1>highlighted projects</h1>
     {{#each content.highlightedProjects as |project|}}
-      <li class="highlight-project link"> {{link-to project.name 'home.project' project.id}}</li>
+      <li class="highlight-project link"> {{link-to project.name 'project.project' project.id}}</li>
     {{/each}}
   </div>
   <div class="github-projects-container">
-    <h1>GitHub Projects</h1>
+    <h1>github projects</h1>
     <div class="github-projects-user-info-container">
       <div class="user-container">
         <p class="link-to-github">Link to my
