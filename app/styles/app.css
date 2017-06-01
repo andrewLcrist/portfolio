@@ -3,6 +3,7 @@
 @import 'project.css';
 @import 'home.css';
 @import 'about.css';
+@import 'nav-bar.css';
 
 body {
   width: 100vw;
@@ -31,7 +32,7 @@ td {
 }
 
 img {
-  border-radius: 5px;
+  border-radius: 100%;
 }
 
 li {
