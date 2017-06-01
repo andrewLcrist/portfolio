@@ -18,7 +18,7 @@ export default Ember.Route.extend({
         about: 'Utilizes geolocation to provide user with current location. User can add up to four other locations to track.',
         built: 'React, React Router, webpack and Mocha for testing.',
         createdBy: 'Alex Pilewski, Andrew Crist, Chrstine Gamble, Gabi Procell',
-        images: ['../../public/assets/weatherforecast/1'],
+        images: ['https://firebasestorage.googleapis.com/v0/b/ember-portfolio-36de9.appspot.com/o/weatherforecast%2F1.png?alt=media&token=2d1c3867-2684-4260-9197-2a2f06a4ffe3'],
         githubURL: 'https://github.com/andrewLcrist/weather-forecast'
       },
       pennywise: {
