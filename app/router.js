@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('home', {path: '/'}, function() {
     this.route('projects');
     this.route('project', {path: ':projectid'});
+    this.route('about');
   });
 });
 

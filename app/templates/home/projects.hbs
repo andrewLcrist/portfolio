@@ -2,7 +2,7 @@
   <div class="highlighted-projects-container">
     <h1>Highlighted Projects</h1>
     {{#each content.highlightedProjects as |project|}}
-      <li class="highlight-project"> {{link-to project.name 'home.project' project.id}}</li>
+      <li class="highlight-project link"> {{link-to project.name 'home.project' project.id}}</li>
     {{/each}}
   </div>
   <div class="github-projects-container">
@@ -16,8 +16,8 @@
       <div class="table-container">
         <table class="github-projects-repos">
           {{#each content.repos as |repo|}}
-            <td>
-              <a target="_blank" href={{repo.html_url}}>
+            <td class="link">
+              <a  target="_blank" href={{repo.html_url}}>
                 {{repo.name}}
               </a>
             </td>

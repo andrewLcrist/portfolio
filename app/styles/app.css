@@ -1,9 +1,19 @@
 @import 'reset.css';
 @import 'projects.css';
-@import 'header.css';
+@import 'home.css';
+@import 'about.css';
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
 
 a {
   text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
 }
 
 table {
