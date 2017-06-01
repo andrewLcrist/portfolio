@@ -2,7 +2,7 @@
   <div class="highlighted-projects-container">
     <h1>Highlighted Projects</h1>
     {{#each content.highlightedProjects as |project|}}
-      <li> {{link-to project.name 'home.projects.project' project.id}}</li>
+      <li> {{link-to project.name 'home.project' project.id}}</li>
     {{/each}}
   </div>
   <div class="github-projects-container">
