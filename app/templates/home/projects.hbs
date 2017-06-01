@@ -1,13 +1,18 @@
 <div class="projects-container">
   <div class="highlighted-projects-container">
     <h1>Highlighted Projects</h1>
+    {{#each content.highlightedProjects as |project|}}
+      <li> {{link-to project.name 'home.projects.project'}}</li>
+    {{/each}}
   </div>
   <div class="github-projects-container">
     <h1>GitHub Projects</h1>
     <div class="github-projects-user-info-container">
-      <img src={{content.user.avatar_url}} width="50px" alt="user picture">
-      <p>{{content.user.name}}</p>
-      <p>Link to my <a tartet="_blank" href={{content.user.html_url}}>GitHub</a></p>
+      <div class="user-container">
+        <p class="link-to-github">Link to my
+          <a tartet="_blank" href={{content.user.html_url}}>GitHub</a>
+        </p>
+      </div>
       <div class="table-container">
         <table class="github-projects-repos">
           {{#each content.repos as |repo|}}
@@ -22,5 +27,7 @@
     </div>
   </div>
 </div>
+
+{{ log content}}
 
 {{outlet}}
