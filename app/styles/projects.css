@@ -47,3 +47,7 @@ td {
 img {
   border-radius: 5px;
 }
+
+li {
+  list-style: none;
+}

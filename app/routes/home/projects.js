@@ -9,8 +9,8 @@ export default Ember.Route.extend({
       repos: $.get(`https://api.github.com/users/andrewlcrist/repos?access_token=${env.githubToken}`),
       highlightedProjects:
         [
-          {id: 'movie-keeper', name: 'Movie Keeper'},
-          {id: 'weather-forecast', name: 'Weather Forecast'},
+          {id: 'moviekeeper', name: 'Movie Keeper'},
+          {id: 'weatherforecast', name: 'Weather Forecast'},
           {id: 'pennywise', name: 'PennyWise'}
         ]
     })
