@@ -5,13 +5,17 @@
 }
 
 .link-to-github {
-  margin: 5px;
+  margin: 20px;
 }
 
 .highlighted-projects-container {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.highlight-project {
+  margin: 10px auto;
 }
 
 .table-container {
@@ -29,25 +33,4 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-table {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-td {
-  width: 200px;
-  margin: 5px;
-  overflow: auto;
-  text-align: center;
-}
-
-img {
-  border-radius: 5px;
-}
-
-li {
-  list-style: none;
 }
