@@ -1,0 +1,39 @@
+.project-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  line-height: 1.4em;
+}
+
+.project-screenshot-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  margin: auto;
+  justify-content: center;
+}
+
+.project-text {
+  margin: auto;
+  width: 400px;
+}
+
+.project-content {
+  margin: 10px auto;
+}
+
+.project-header {
+  font-size: 18px;
+}
+
+.github-link {
+  color: black;
+}
+
+.app-screenshot {
+  border: .5px black solid;
+  height: 500px;
+  margin: 10px auto;
+}

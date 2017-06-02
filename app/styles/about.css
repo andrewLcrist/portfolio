@@ -1,0 +1,9 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 400px;
+  margin: auto;
+  line-height: 1.4em;
+}
