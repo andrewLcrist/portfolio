@@ -6,6 +6,17 @@ const Router = Ember.Router.extend({
   rootURL: config.rootURL
 });
 
+console.log(Router.reopen());
+
+Router.reopen({
+  notifyGoogleAnalytics: function() {
+    return ga('send', 'pageview', {
+        'page': this.get('url'),
+        'title': this.get('url')
+      });
+  }.on('didTransition')
+});
+
 Router.map(function() {
   this.route('home', {path: '/'}, function() {});
   this.route('projects');
