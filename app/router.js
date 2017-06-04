@@ -6,8 +6,6 @@ const Router = Ember.Router.extend({
   rootURL: config.rootURL
 });
 
-console.log(Router.reopen());
-
 Router.reopen({
   notifyGoogleAnalytics: function() {
     return ga('send', 'pageview', {
