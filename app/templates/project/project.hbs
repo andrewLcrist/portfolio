@@ -4,6 +4,7 @@
   <div class="project-text">
     <h1 class="project-title">{{content.name}}</h1>
     <p class="github-link"><a target="_blank" href={{content.githubURL}}>view on github</a></p>
+    <p class="project-content"><span class="project-header">production site:</span><br><a target='_blank'>{{ production-site content.production }}</a></p>
     <p class="project-content"> <span class="project-header"> about:<br></span>{{content.about}}</p>
     <p class="project-content"><span class="project-header">built using:<br></span>{{content.built}}</p>
     <p class="project-content"><span class="project-header">created by:<br></span>{{content.createdBy}}</p>
@@ -13,7 +14,7 @@
     {{#each content.images as |image|}}
       <img class="app-screenshot" src={{image}} alt="app screenshot">
     {{/each}}
-  </div>  
+  </div>
 </div>
 
 {{outlet}}
