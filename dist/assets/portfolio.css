@@ -1,0 +1,51 @@
+@import 'reset.css';
+@import 'projects.css';
+@import 'project.css';
+@import 'home.css';
+@import 'about.css';
+@import 'nav-bar.css';
+
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: lighter;
+}
+
+a {
+  color: #b30000;
+  text-decoration: none;
+}
+
+a:visited {
+  color: none;
+}
+
+a:hover {
+  color: #52262f;
+}
+
+table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+td {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 200px;
+  margin: 5px;
+  overflow: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 20px auto 10px auto;
+}

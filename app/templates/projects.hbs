@@ -1,0 +1,33 @@
+{{nav-bar}}
+
+<div class="projects-container">
+  <div class="highlighted-projects-container">
+    <h1>highlighted projects</h1>
+    {{#each content.highlightedProjects as |project|}}
+      <li class="highlight-project link"> {{link-to project.name 'project.project' project.id}}</li>
+    {{/each}}
+  </div>
+  <div class="github-projects-container">
+    <h1>github projects</h1>
+    <div class="github-projects-user-info-container">
+      <div class="user-container">
+        <p class="link-to-github">link to my
+          <a tartet="_blank" href={{content.user.html_url}}>GitHub</a>
+        </p>
+      </div>
+      <div class="table-container">
+        <table class="github-projects-repos">
+          {{#each content.repos as |repo|}}
+            <td class="link">
+              <a  target="_blank" href={{repo.html_url}}>
+                {{repo.name}}
+              </a>
+            </td>
+          {{/each}}
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{outlet}}
